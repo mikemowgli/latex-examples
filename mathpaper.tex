@@ -1,0 +1,164 @@
+\documentclass[11pt]{article}
+
+%To have accents in French
+\usepackage[utf8]{inputenc}
+
+% To adjust margins
+\usepackage[margin=1in]{geometry}
+\usepackage{amsfonts,amsmath,amssymb}
+\usepackage[none]{hyphenat}
+
+%To use tables and figures
+\usepackage{graphicx}
+\usepackage{float}
+
+%Table of content
+\usepackage[nottoc, notlot, notlof]{tocbibind}
+
+%To display dates in custom format and in French
+\usepackage[french]{babel}
+\usepackage[]{datetime}
+
+% To create custom header and footer on the title page
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+
+% Clear the default header and footer
+\fancyhead{}
+\fancyfoot{}
+%Define our custom header and footer
+\fancyhead[L]{\slshape \MakeUppercase{Place Title Here}}
+\fancyhead[R]{\slshape Student Name}
+\fancyfoot[C]{\thepage}
+
+%Remove the horizontal line from below the header and the footer
+%\renewcommand{\headrulewidth}{0pt}
+%\renewcommand{\footrulewidth}{0pt}
+
+%Avoid paragraphs identation
+%\parindent 0ex
+%Largeur d'alinéa en début de paragraphe
+\setlength{\parindent}{3em}
+%Espace inter-paragraphe
+\setlength{\parskip}{1em}
+%Interligne
+\renewcommand{\baselinestretch}{1.2}
+
+\begin{document}
+
+\begin{titlepage}
+\begin{center}
+\vspace*{1cm}
+\Large{\textbf{Free Bird Computing}}\\
+\Large{\textbf{Rapport d'activités}}\\
+\vfill
+\line(1,0){400}\\[1mm]
+\huge{\textbf{This is a Sample Title}}\\[3mm]
+\Large{\textbf{- This is a Sample Subtitle -}}\\[1mm]
+\line(1,0){400}\\[1mm]
+\vfill
+By Author Name\\
+Author Function\\
+\today \\
+\end{center}
+\end{titlepage}
+
+\tableofcontents
+\thispagestyle{empty}
+\clearpage
+
+%Start counting page after the table of contents
+\setcounter{page}{1}
+
+\section{Introduction}
+Dans une architecture mettant en œuvre l'API Gateway d'Azure, que Microsoft appelle "Azure API Management" (abrégé plus tard en APIM), l'authentification et l'autorisation des utilisateurs et des développeurs peuvent être mises en oeuvre au moyen d'Azure Active Directory (abrégé plus tard en AAD).\footnote{An example footnote}\\
+
+Si on n'est pas en UTF-8, on peut avoir les accents de cette manière.\\
+\'e\\
+\oe\\
+\^e\\
+\c{c}\\
+\.o\\
+
+
+AAD, en tant que Secure Token Service (STS), délivre les Access Tokens sous la forme Json Web Tokens (abrégé plus tard en JWT). Dans une architecture mettant en œuvre l'API Gateway d'Azure, que Microsoft appelle « Azure API Management » (abrégé plus tard en APIM), l'authentification et l'autorisation des utilisateurs et des développeurs peuvent être mises en oeuvre au moyen d'Azure Active Directory (abrégé plus tard en AAD).\\
+
+AAD, en tant que Secure Token Service (STS), délivre les Access Tokens sous la forme Json Web Tokens (abrégé plus tard en JWT).
+
+\section{Scoring Criteria}
+Some text here.
+
+\subsection{Communication}
+Some text here.\\
+Let's reference a bibliography entry. \cite{Foo}\\
+
+\subsection{Matematical Presentation}
+Some text here.\\
+
+Some new paragraph.\\
+
+Some table here. Here's a reference to the table (see table \ref{tab:data1}).\\
+\begin{table}[H]
+  \centering
+    \begin{tabular}{|c|c|c|c|} \hline
+      $x$ & 0 & 1 & 2\\ \hline
+      $f(x)$ & 3 & 6 & 9\\ \hline
+    \end{tabular}
+  \caption{Caption goes here}
+  \label{tab:data1}
+\end{table}
+
+Some figure here. Here's a reference to the figure (see figure \ref{fig:squeeze}).\\
+\begin{figure}[H]
+  \centering
+  \includegraphics[scale=0.8]{figures/graph10}
+  \caption{The Squeeze Theorem}
+  \label{fig:squeeze}
+\end{figure}
+
+\subsection{Personal Engagement}
+Some text here.
+
+\subsection{Reflection}
+Some text here.
+
+\subsection{Use of Mathematics}
+Some text here.
+
+\section{Conclusion}
+Some text here.
+
+\section{Using \LaTeX\ }
+Some text here.
+
+\pagebreak
+% or
+%\newpage
+
+\begin{thebibliography}{}
+
+
+\bibitem{Phil1}
+Back, Philippe.
+``HighOctane SPRL."
+\textit{The Agile Manifesto}.
+12 avril 1986.
+
+\bibitem{Foo}
+Derveau, Olivier.
+``Title of Article."
+\textit{Title of Book}.
+12 avril 1986.
+
+\bibitem{Bar}
+Michot, Arnaud.
+``CETIC."
+\textit{Name of site}.
+Date of access 12 avril 2016.
+\texttt{<http://example.com>.}
+
+
+\end{thebibliography}
+
+
+\end{document}

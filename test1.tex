@@ -1,0 +1,125 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage{amsmath}
+\usepackage[utf8]{inputenc}
+\usepackage{eurosym,textcomp}
+
+\begin{document}
+
+This is my first LaTeX document.
+These are carriage
+
+returns making new paragraphs.
+
+Here is a carriage return continuing \\the same paragraph.\\
+
+ 
+This is an inline math formula: $(x+1)$ and $(x+3)$.
+This is a formula on a separate line:
+$$A=x^2+4x+3$$ \\
+
+This is a numbered formula:
+\begin{equation}
+A=x^2+4x+3
+\end{equation} 
+
+And here's the second one with superscripts (exposants):
+\begin{equation}
+A=x^{29}+4x+3
+\end{equation} 
+Now with subscripts (indices):
+\begin{equation}
+x_{3z_i+4}+4j
+\end{equation}
+
+Greek letters:
+$$\alpha=\pi r^2$$
+$$y=\sin{x}$$
+
+Log functions:
+$$\log_5{x}$$
+$$\ln{x}$$
+$$\exp{x}$$
+
+Square root:
+$$\sqrt{x}$$
+
+Escaping characters:
+$$\{a,b,c\}$$
+$$\$12$$
+
+Expanding parenthesis:
+$$3\left(\frac{2}{5}\right)$$
+$$3\left[\frac{2}{5}\right]$$
+$$3\left\{\frac{2}{5}\right\}$$
+$$3\left|\frac{2}{5}\right|$$
+Not printing one side of the brackets:
+$$3\left[\frac{2}{5}\right.$$
+
+Table:
+\begin{tabular}{c|cccrl}
+\hline
+$x$ & 1 & 2 & 3 & 4 & 5 \\ \hline
+$f(x)$ & 10 & 20 \vline & 30 & 4000000000 & 50000000000 \\ \hline
+\end{tabular}
+
+Equation array:
+\begin{eqnarray}
+5x^2-9&=&x+3 \\
+4x^2&=&12 \\
+x^3&=&3 \\
+x&\approx&\pm1.732 
+\end{eqnarray}
+
+Same without numbering:
+\begin{eqnarray*}
+5x^2-9&=&x+3 \\
+4x^2&=&12 \\
+x^3&=&3 \\
+x&\approx&\pm1.732 
+\end{eqnarray*}
+
+List:
+\begin{enumerate}
+\item pencil
+\item calculator
+\item ruler
+\item notebook
+\begin{enumerate}
+\item sublist
+\begin{enumerate}
+\item subsublist
+\begin{enumerate}
+\item cannot go further
+\end{enumerate}
+\end{enumerate}
+\end{enumerate}
+\item graph paper
+\end{enumerate}
+
+List without numbering:
+List:
+\begin{itemize}
+\item pencil
+\item calculator
+\item ruler
+\item notebook
+\begin{itemize}
+\item sublist
+\begin{itemize}
+\item subsublist
+\begin{itemize}
+\item cannot go further
+\end{itemize}
+\end{itemize}
+\end{itemize}
+\item graph paper
+\end{itemize}
+
+Naming items:
+\begin{enumerate}
+\item[Propriété 1] bonjour
+\item[Second property] hello
+\end{enumerate}
+
+
+\end{document}
